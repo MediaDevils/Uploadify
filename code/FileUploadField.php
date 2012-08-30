@@ -94,8 +94,8 @@ class FileUploadField extends UploadifyField
 	 *
 	 * @return UploadifyField
 	 */
-	public function FieldHolder() {
-		$f = parent::FieldHolder();
+	public function FieldHolder($attributes = array()) {
+		$f = parent::FieldHolder($attributes);
 		$this->setVar('multi',false);
 		return $f;
 	}
